@@ -1,0 +1,11 @@
+NUWA Display (nuwa-display-regular.woff, nuwa-display-bold.woff)
+
+These files are renamed Latin subsets of TeX Gyre Adventor Regular and Bold,
+made with fontTools from the copies in TeX Live
+(texmf-dist/fonts/opentype/public/tex-gyre/texgyreadventor-*.otf).
+
+TeX Gyre Adventor is (C) 2006-2008 B. Jackowski and J. M. Nowacki,
+GUST e-foundry, and is distributed under the GUST Font License
+(https://www.gust.org.pl/projects/e-foundry/licenses).
+As the licence asks for modified versions, the subset carries a different
+font name.
