@@ -90,7 +90,7 @@ a.pdfref:hover { text-decoration-color: currentColor; }
 .progress span { display: block; height: 100%; background: var(--grad); transform-origin: 0 50%; transform: scaleX(var(--p, 0)); }
 
 /* small labels share one recipe: the text face in sentence case, set apart by weight and a readable grey */
-.m-advisors dt, .stat dt, .hero-models .label, .toc-h, .side-label, .panel-text .panel-kicker,
+.m-advisors dt, .hero-models .label, .toc-h, .side-label, .panel-text .panel-kicker,
 table.dims thead th, .ch-table th {
   color: var(--label); font: 600 14px/1.35 var(--sans); font-variant-numeric: tabular-nums;
 }
@@ -164,16 +164,8 @@ table.dims thead th, .ch-table th {
 .m-lab .lab-mark { width: 24px; height: auto; filter: var(--mark-filter); }
 .cta { order: 5; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 36px; }
 
-.hero-foot { order: 6; position: relative; width: 100%; max-width: 1032px; margin: 64px auto 0; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: 0; border: 1px solid var(--line); border-radius: var(--r); background: color-mix(in srgb, var(--surface) 62%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); box-shadow: var(--shadow-sm); }
-/* number on top, label under it; numbers stay on one line even when a label wraps */
-.stat { display: flex; flex-direction: column-reverse; justify-content: flex-end; padding: 26px 18px 24px; text-align: center; }
-.stat + .stat { border-left: 1px solid var(--line); }
-.stat dd { margin: 0; font: 700 clamp(36px, 4vw, 52px)/1 var(--display); letter-spacing: -.03em; }
-.stat dd span { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.stat dt { margin-top: 12px; font-weight: 500; }
-.stat dt::first-letter { text-transform: uppercase; }
-.hero-models { display: flex; flex-direction: column; align-items: center; gap: 14px; margin-top: 30px; }
+.hero-foot { order: 6; position: relative; width: 100%; max-width: 1032px; margin: 42px auto 0; }
+.hero-models { display: flex; flex-direction: column; align-items: center; gap: 14px; }
 .hero-models .label { margin: 0; line-height: 1; }
 .hero-models ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 30px; max-width: 660px; margin: 0; padding: 0; }
 .hero-models li { display: inline-flex; align-items: center; gap: 9px; color: var(--text-2); font-size: 15px; font-weight: 600; list-style: none; transition: color .25s; }
@@ -254,15 +246,11 @@ main { min-width: 0; }
 
 /* findings */
 .tablist { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 18px; }
-.tab { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; padding: 16px 16px 15px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); box-shadow: var(--shadow-sm); color: var(--text-2); text-align: left; cursor: pointer; transition: border-color .25s, background .25s, color .25s, box-shadow .25s, transform .25s; }
+.tab { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; padding: 13px 15px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); box-shadow: var(--shadow-sm); color: var(--text-2); text-align: left; cursor: pointer; transition: border-color .25s, background .25s, color .25s, box-shadow .25s, transform .25s; }
 .tab:hover { color: var(--ink); border-color: var(--line-2); transform: translateY(-1px); }
-.tab-top { display: flex; width: 100%; align-items: center; justify-content: space-between; }
-.tab-ico { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--surface-2); color: var(--ink); transition: background .25s, color .25s; }
-.tab-ico svg { width: 19px; height: 19px; }
 .tab-n { color: var(--label); font: 600 13px/1 var(--sans); font-variant-numeric: tabular-nums; }
 .tab-name { font-size: 14.5px; font-weight: 600; line-height: 1.3; }
 .tab[aria-selected="true"] { background: var(--dark-btn); border-color: var(--dark-btn); color: var(--on-dark-btn); box-shadow: var(--shadow); transform: none; }
-.tab[aria-selected="true"] .tab-ico { background: var(--grad); color: #fff; }
 .tab[aria-selected="true"] .tab-n { color: color-mix(in srgb, var(--on-dark-btn) 60%, transparent); }
 @media (min-width: 981px) {
   /* a small pointer ties the selected tab to its panel */
@@ -470,12 +458,8 @@ table.dims td { color: var(--text-2); }
   .cta { margin-top: 30px; }
   .cta .btn, .foot .btn { min-height: 48px; padding: 0 20px; font-size: 15px; }
   .btn-ghost, .btn-note { display: none; }
-  .hero-foot { margin-top: 44px; }
-  .stats { grid-template-columns: repeat(2, 1fr); }
-  .stat { padding: 22px 12px 20px; }
-  .stat:nth-child(3) { border-left: 0; }
-  .stat:nth-child(n + 3) { border-top: 1px solid var(--line); }
-  .hero-models { margin-top: 26px; gap: 12px; }
+  .hero-foot { margin-top: 32px; }
+  .hero-models { gap: 12px; }
   .hero-models ul { gap: 10px 22px; }
   .hero-models li { font-size: 14.5px; }
   .grid-2 { grid-template-columns: minmax(0, 1fr); }
