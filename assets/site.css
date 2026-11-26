@@ -169,6 +169,11 @@ table.dims thead th, .ch-table th {
 .hero-models .label { margin: 0; line-height: 1; }
 .hero-models ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 30px; max-width: 660px; margin: 0; padding: 0; }
 .hero-models li { display: inline-flex; align-items: center; gap: 9px; color: var(--text-2); font-size: 15px; font-weight: 600; list-style: none; transition: color .25s; }
+.source-link { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+.source-link:hover, .source-link:focus-visible { text-decoration-color: currentColor; }
+.hero-models .source-link { display: inline-flex; align-items: center; gap: 9px; color: inherit; min-height: 24px; }
+.hero-models .source-link:hover, .hero-models .source-link:focus-visible { color: var(--accent); }
+.hero-models .source-link:focus-visible img { filter: none; }
 .hero-models li img { width: 22px; height: 22px; filter: grayscale(1) opacity(.65); transition: filter .25s; }
 .hero-models li:hover { color: var(--ink); }
 .hero-models li:hover img { filter: none; }
